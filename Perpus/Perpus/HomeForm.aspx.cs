@@ -15,7 +15,18 @@ namespace Perpus
         {
             if(Session["LoginID"] != null)
             {
-                Username.Text = "Welcome " + Session["LoginUsername"].ToString();
+                string role = "";
+                if (Session["LoginRole"].ToString() == "0")
+                {
+                    role = "Admin";
+                }
+                else
+                {
+                    role = "Penyewa";
+                }
+
+                Username.Text = "Welcome " + Session["LoginUsername"].ToString() + " As " + role;
+
                 if(Session["LoginRole"].ToString() == "0")
                 {
                     btnBuku.Visible = true;

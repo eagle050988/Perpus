@@ -19,8 +19,8 @@
                 <tr>
                     <td>
                         <asp:Button Text="Laporan" ID="btnLaporan" runat="server" OnClick="btnLaporan_Click" />
-                        <asp:Button Text="Daftar Buku" ID="btnBuku" runat="server" OnClick="btnBuku_Click" />
-                        <asp:Button Text="Sewa" ID="btnSewa" runat="server" OnClick="btnSewa_Click" />
+                        <asp:Button Text="Master Buku" ID="btnBuku" runat="server" OnClick="btnBuku_Click" />
+                        <asp:Button Text="Peminjaman" ID="btnSewa" runat="server" OnClick="btnSewa_Click" />
                         <asp:Button Text="Logout" ID="btnLogout" runat="server" OnClick="btnLogout_Click" />
                     </td>
                 </tr>

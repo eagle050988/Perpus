@@ -61,6 +61,7 @@
                     <td class="style2"></td>  
                     <td>  
                         <asp:Button ID="Button1" runat="server" Text="Log In" onclick="Button1_Click" />  
+                        <asp:Button ID="Button2" runat="server" Text="Register" OnClick="Button2_Click"/>  
                     </td>  
                     <td>  
                         <asp:Label ID="Label1" runat="server"></asp:Label>  

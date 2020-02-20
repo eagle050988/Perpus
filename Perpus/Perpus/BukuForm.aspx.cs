@@ -15,8 +15,15 @@ namespace Perpus
         {
             if (!IsPostBack)
             {
-                Clear();
-                GridBukuFill();
+                if (Session["LoginID"] != null)
+                {
+                    Clear();
+                    GridBukuFill();
+                }
+                else
+                {
+                    Response.Redirect("Loginform.aspx");
+                }
             }
         }
 
@@ -130,6 +137,17 @@ namespace Perpus
         protected void btnHome_Click(object sender, EventArgs e)
         {
             Response.Redirect("Homeform.aspx");
+        }
+
+        protected void btnLaporan_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("LaporanForm.aspx");
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("Loginform.aspx");
         }
     }
 }

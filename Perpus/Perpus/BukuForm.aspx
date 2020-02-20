@@ -5,13 +5,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .style1
+        {
+            text-decoration: underline;
+            font-size: large;
+            text-align: left;
+        }
+        .style2
+        {
+            width: 141px;
+        }   
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <asp:Button Text="Home" ID="btnHome" runat="server" OnClick="btnHome_Click"/>
+            <asp:Button Text="Laporan" ID="btnLaporan" runat="server" OnClick="btnLaporan_Click"/>
+            <asp:Button Text="Logout" ID="btnLogout" runat="server" OnClick="btnLogout_Click"/>
             <asp:HiddenField  ID="hfIDBuku" runat="server" />
             <table>
+                <caption class="style1">  
+                    <strong>Daftar Buku</strong>  
+                </caption>  
                 <tr>
                     <td>
                         <asp:Label Text="Judul Buku :" runat="server"/>

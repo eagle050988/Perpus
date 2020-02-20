@@ -76,6 +76,7 @@
     <Content Include="HomeForm.aspx" />
     <Content Include="LaporanForm.aspx" />
     <Content Include="LoginForm.aspx" />
+    <Content Include="RegisterForm.aspx" />
     <Content Include="SewaForm.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -112,6 +113,13 @@
       <DependentUpon>LoginForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.aspx.cs">
+      <DependentUpon>RegisterForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.aspx.designer.cs">
+      <DependentUpon>RegisterForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SewaForm.aspx.cs">
       <DependentUpon>SewaForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
